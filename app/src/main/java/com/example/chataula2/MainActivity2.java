@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MainActivity2 extends AppCompatActivity {
 
     public final static String KEY_INTENT_MAIN2 = "MENSAGEM_MAIN2";
-    public static final String KEY_RESPOSTA = "RESPOSTA"
+    public static final String KEY_RESPOSTA = "RESPOSTA";
 
     private SharedPreferences sharedPreferences;
 
@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         button.setOnClickListener((View) ->  {
             Intent intent = new Intent();
-            String value = editText.getText().ToString();
+            String value = editText.getText().toString();
 //            intent.putExtra(KEY_RESPOSTA, value);
 //            setResult(Activity.RESULT_OK, intent);
             finish();
